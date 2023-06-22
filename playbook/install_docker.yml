@@ -1,7 +1,7 @@
 ---
 - name: Install Docker
-  hosts: your_server
-  become: true
+  # hosts: your_server
+  # become: true
 
   tasks:
     - name: Update apt cache
