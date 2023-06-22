@@ -1,7 +1,7 @@
 ---
 - name: Install Docker Compose
-  # hosts: your_server
-  # become: true
+  hosts: "{{ ansible_play_hosts_all }}"
+  become: true
 
   tasks:
     - name: Install Python and pip
