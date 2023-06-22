@@ -1,0 +1,15 @@
+---
+- name: Install Certbot
+  hosts: "{{ ansible_play_hosts_all }}"
+  become: true
+
+  tasks:
+    - name: Install Certbot package
+      apt:
+        name: certbot
+        state: present
+
+    - name: Install Certbot nginx plugin
+      apt:
+        name: python3-certbot-nginx
+        state: present
