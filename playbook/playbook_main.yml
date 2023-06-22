@@ -3,11 +3,11 @@
   hosts: your_target_hosts
 
   tasks:
-    - name: Install Docker [playbook install docker]
+    - name: Install Docker
       import_playbook: install_docker.yml
 
-    - name: Install Docker Compose [playbook install docker compose]
+    - name: Install Docker Compose
       import_playbook: install_docker_compose.yml
 
-    - name: Install Nginx [playbook install_nginx]
+    - name: Install Nginx
       import_playbook: install_nginx.yml
